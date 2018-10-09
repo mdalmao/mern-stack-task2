@@ -7,7 +7,7 @@ const path =  require('path'); // se encarga de unir directorios sin aisalndo de
 console.log('Cargo inicial');
 const { mongoose } = require('./database');
 
-app.set('port', process.env.PORT || 80); // esto es para que ya tome un puerto si se despliega en una nuve
+app.set('port', process.env.PORT || 3000); // esto es para que ya tome un puerto si se despliega en una nuve
 // middelwares
 app.use (morgan('dev')); // usa morgan en entorno de desarrollo
 app.use(express.json()); // comprueba para cada peticion que llega al servidor si es una peticion JSON o no
