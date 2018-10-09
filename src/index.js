@@ -5,7 +5,7 @@ const path =  require('path'); // se encarga de unir directorios sin aisalndo de
 // configuracion
 
 console.log('Cargo inicial');
-//const { mongoose } = require('./database');
+const { mongoose } = require('./database');
 
 app.set('port', process.env.PORT || 8080); // esto es para que ya tome un puerto si se despliega en una nuve
 // middelwares
