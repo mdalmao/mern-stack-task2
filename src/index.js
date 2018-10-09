@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const path =  require('path'); // se encarga de unir directorios sin aisalndo del sistema operativo donde se ejecuta, para evitar los problemas con las / o \ entre Linux y Windows por ejemplo
 // configuracion
 
+console.log('Cargo inicial');
 const { mongoose } = require('./database');
 
 app.set('port', process.env.PORT || 80); // esto es para que ya tome un puerto si se despliega en una nuve
